@@ -10,7 +10,7 @@ function [w,b,gradcheck,loss]=GISTupdate(var,w,b,batch_size,y,index,lamda,tao)
     grad=-grad';
     u=w-(grad+lamda*w)/tao;
     w=u/(1/tao+1);
-    gradcheck=abs(grad);
+    gradcheck=abs(grad)/batch_size;
     b=b-sgrad*y'/tao;
     loss=ONElosscompute(var,w,y,batch_size,b,lamda,1);
 

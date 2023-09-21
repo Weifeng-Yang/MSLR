@@ -12,7 +12,7 @@ function [w,b,gradcheck,lossout]=GPGNupdate(var,w,b,z,batch_size,y,index,aa,lamd
     grad=-grad';
     w=w-(grad+lamda*w)/tao;
     [w,ind]=PROX(w,aa,z);
-    gradcheck=norm(grad);
+    gradcheck=norm(grad)/batch_size;
     for i=index:batch_size+index-1
      sgrad(i)=y(i)/(1+exp((w*var{i}'+b)*y(i)));
     end
@@ -60,7 +60,7 @@ function [w,b,gradcheck,lossout]=GPGNupdate(var,w,b,z,batch_size,y,index,aa,lamd
    if(check<0)
             w=wv;
             lossout=wvloss;
-            gradcheck=norm(grad);
+            gradcheck=norm(grad)/batch_size;
    else
             lossout=wloss;
             

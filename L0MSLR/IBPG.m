@@ -54,11 +54,9 @@ bk=b;
 
 
 %% Check if termination condition is met
-check=0;
 stopgrad=sum(gradcheck);
 for j=1:num
     fprintf("nonzero:%d\n",nnz(w{j}~=0));
-    check=check+norm(w{j}-wk{j});
 end
 bts{i}=bt;
 ats{i}=at;
@@ -66,9 +64,8 @@ t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
-fprintf("IBPG:parametercheck:%d\n",check);
-fprintf("gradcheck:%d\n",stopgrad);
-fprintf("cri：%d",absloss);
+fprintf("IBPG:criteria：%d\n",check);
+fprintf("gradcheck:%d\n",absloss);
 stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
 if(stop==1)
     fprintf("终止次数：%d\n",i);

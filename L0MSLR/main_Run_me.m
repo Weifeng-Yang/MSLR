@@ -28,10 +28,14 @@ clc
 %   trainsplit: The proportion of the training set to the total number of samples
 %   lamda     ：The coefficient of the regularization term
 
+% Output
+%   criteria  : The difference in the training set loss function between two iterations.
+%   gradcheck ：The difference in the gradient of the training set loss function between two iterations.
+
 %% Parameter settings
 rng('shuffle');
 warning('off');
-index=1;
+index=5;
 bt=0.6;
 r=1.5;
 tk=1.3;

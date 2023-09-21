@@ -35,16 +35,13 @@ wk=w;
 [losstest(i+1),losscor(i+1),auc(i+1)]=ONElosscompute(testvar,w,ytest,testsize,b,lamda,2);
 
 %% Check if termination condition is met
-check=0;
 stopgrad=abs(gradcheck);
 fprintf("GPGN:nonzero:%d\n",nnz(w));
-check=check+norm(w-wk);
 t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
 fprintf("criteria:%d\n",absloss);
-fprintf("parametercheck:%d\n",check);
 fprintf("gradcheck:%d\n",stopgrad);
 stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
 if(stop==1)

@@ -11,7 +11,7 @@ for j=1:num
     grad=grad';
       u=w{j}-(grad+lamda(j)*w{j})/tao;
       w{j}=u/(1/tao+1);
-       gradcheck(j)=norm(grad);
+       gradcheck(j)=norm(grad)/batch_size;
 end
     [~,tao,gradb]=compute(var,w,num,j,batch_size,b,y,index,2);
     L(num+1)=tao;

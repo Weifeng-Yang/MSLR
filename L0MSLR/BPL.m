@@ -69,20 +69,17 @@ end
 [losstest(i+1),losscor(i+1),auc(i+1)]=losscompute(testvar,w,num,b,ytest,testsize,lamda,2);
 
 %% Check if termination condition is met
-check=0;
 stopgrad=sum(gradcheck);
 for j=1:num
-    fprintf("nonzero:%d\n",sum(sum(w{j}~=0)));
-    check=check+norm(w{j}-wk{j});
+    fprintf("nonzero:%d\n",nnz(w{j}~=0));
 end
 bts{i}=wbt;
 t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
-fprintf("BPL:gradcheck:%d\n",stopgrad);
-fprintf("criteria:%d\n",absloss);
-fprintf("parametercheck:%d\n",check);
+fprintf("BPL:criteria:%d\n",absloss);
+fprintf("gradcheck:%d\n",stopgrad);
 stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
 if(stop==1)
     fprintf("终止次数：%d\n",i);

@@ -32,7 +32,7 @@ function [w,b,gradcheck,L,at,bt]=IBPGupdate(var,w,z,num,batch_size,b,y,index,aa,
         [w{j},~]=PROX(w{j},aa(j),z{j});
         end
 
-    gradcheck(j)=norm(grad);
+    gradcheck(j)=norm(grad)/batch_size;
     end
 
     at(num+1)=min(wbt(num+1),0.2*(r-1)/r*sqrt(LK(num+1)/L(num+1)));
