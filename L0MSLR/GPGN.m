@@ -19,7 +19,6 @@ wsize=sum(size(w));
 
 TOL=(1e-6)*sqrt(wsize);
 TOLgrad=(1e-6)*sqrt(wsize);
-fprintf("TOL:%d\n",TOL);
 
 rate=[];
 [loss(1),~]=ONElosscompute(var,w,y,bsize,b,lamda,1);
@@ -36,7 +35,8 @@ wk=w;
 
 %% Check if termination condition is met
 stopgrad=abs(gradcheck);
-fprintf("GPGN:nonzero:%d\n",nnz(w));
+fprintf("GPGN\n");
+fprintf("nonzero:%d\n",nnz(w));
 t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));

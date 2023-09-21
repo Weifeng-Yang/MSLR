@@ -26,7 +26,6 @@ end
 
 TOL=(1e-6)*sqrt(wsize);
 TOLgrad=(1e-6)*sqrt(wsize);
-fprintf("TOL:%d\n",TOL);
 wk=w;
 bk=b;
 
@@ -84,6 +83,7 @@ end
 bts(i)=bt;
 
 %% Check if termination condition is met
+fprintf("APALM\n");
 stopgrad=sum(gradcheck);
 for j=1:num
     fprintf("nonzero:%d\n",nnz(w{j}~=0));
@@ -92,7 +92,7 @@ t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
-fprintf("APALM:criteria:%d\n",absloss);
+fprintf("criteria:%d\n",absloss);
 fprintf("gradcheck:%d\n",stopgrad);
 stop=stopcheck(TOLgrad,absloss/bsize,stopgrad,timerun,stopindex);
 if(stop==1)

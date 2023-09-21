@@ -23,7 +23,6 @@ end
 
 TOL=(1e-6)*sqrt(wsize);
 TOLgrad=(1e-6)*sqrt(wsize);
-fprintf("TOL:%d\n",TOL);
 
 rate=[];
 wk=w;
@@ -55,6 +54,7 @@ bk=b;
 
 %% Check if termination condition is met
 stopgrad=sum(gradcheck);
+fprintf("IBPG\n");
 for j=1:num
     fprintf("nonzero:%d\n",nnz(w{j}~=0));
 end
@@ -64,7 +64,7 @@ t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
-fprintf("IBPG:criteria：%d\n",absloss);
+fprintf("criteria：%d\n",absloss);
 fprintf("gradcheck:%d\n",stopgrad);
 stop=stopcheck(TOLgrad,absloss/bsize,stopgrad,timerun,stopindex);
 if(stop==1)

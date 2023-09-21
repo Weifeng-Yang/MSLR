@@ -21,7 +21,6 @@ wsize=sum(size(w));
 
 TOL=(1e-6)*sqrt(wsize);
 TOLgrad=(1e-6)*sqrt(wsize);
-fprintf("TOL:%d\n",TOL);
 rate=[];
 wk=w;
 bk=b;
@@ -42,9 +41,10 @@ tao=min(tao*t,taomax);
 
 %% Check if termination condition is met
 stopgrad=sum(gradcheck);
+fprintf("GIST\n");
 fprintf("nonzero:%d\n",nnz(w));
 absloss=abs(loss(i+1)-loss(i));
-fprintf("GIST:criteria:%d\n",absloss);
+fprintf("criteria:%d\n",absloss);
 t2=clock;
 timerun(i+1)=etime(t2,t1);
 rate(i)=absloss;
