@@ -28,7 +28,8 @@ clc
 %   trainsplit: The proportion of the training set to the total number of samples
 %   lamda     ：The coefficient of the regularization term
 
-% Output
+% Display
+%   nonzero   ：The number of non-zero elements in each component.
 %   criteria  : The difference in the training set loss function between two iterations.
 %   gradcheck ：The difference in the gradient of the training set loss function between two iterations.
 
