@@ -94,9 +94,9 @@ absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
 fprintf("APALM:criteria:%d\n",absloss);
 fprintf("gradcheck:%d\n",stopgrad);
-stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
+stop=stopcheck(TOLgrad,absloss/bsize,stopgrad,timerun,stopindex);
 if(stop==1)
-    fprintf("终止次数：%d\n",i);
+    fprintf("Number of terminations：%d\n",i);
     siter=i;
     pause(4);
     break;

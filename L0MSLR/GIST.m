@@ -43,15 +43,15 @@ tao=min(tao*t,taomax);
 %% Check if termination condition is met
 stopgrad=sum(gradcheck);
 fprintf("nonzero:%d\n",nnz(w));
+absloss=abs(loss(i+1)-loss(i));
 fprintf("GIST:criteria:%d\n",absloss);
 t2=clock;
 timerun(i+1)=etime(t2,t1);
-absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
 fprintf("gradcheck:%d\n",stopgrad);
-stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
+stop=stopcheck(TOLgrad,absloss/bsize,stopgrad,timerun,stopindex);
 if(stop==1)
-    fprintf("终止次数：%d\n",i);
+    fprintf("Number of terminations：%d\n",i);
     pause(4);
     break;
 end

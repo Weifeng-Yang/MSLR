@@ -64,11 +64,11 @@ t2=clock;
 timerun(i+1)=etime(t2,t1);
 absloss=abs(loss(i+1)-loss(i));
 rate(i)=absloss;
-fprintf("IBPG:criteria：%d\n",check);
-fprintf("gradcheck:%d\n",absloss);
-stop=stopcheck(TOLgrad,absloss/bsize,check,stopgrad,timerun,stopindex);
+fprintf("IBPG:criteria：%d\n",absloss);
+fprintf("gradcheck:%d\n",stopgrad);
+stop=stopcheck(TOLgrad,absloss/bsize,stopgrad,timerun,stopindex);
 if(stop==1)
-    fprintf("终止次数：%d\n",i);
+    fprintf("Number of terminations：%d\n",i);
     siter=i;
     pause(4);
     break;

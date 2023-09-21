@@ -35,7 +35,7 @@ clc
 %% Parameter settings
 rng('shuffle');
 warning('off');
-index=5;
+index=1;
 bt=0.6;
 r=1.5;
 tk=1.3;

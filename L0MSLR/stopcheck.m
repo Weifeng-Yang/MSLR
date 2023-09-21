@@ -2,7 +2,7 @@
 % Globally Convergent Accelerated Algorithms for Multilinear Sparse Logistic Regression with $\ell_0$-constraints
 % timerun(end)>timeend : Where 'timeend' refers to the termination running time
 
-function stop=stopcheck(TOLgrad,absloss,check,stopgrad,timerun,stopindex)
+function stop=stopcheck(TOLgrad,absloss,stopgrad,timerun,stopindex)
     stop=0;
     threshold=1e-5;
     if(stopindex==1)
