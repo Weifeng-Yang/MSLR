@@ -29,9 +29,9 @@ clc
 %   lamda     ：The coefficient of the regularization term
 
 % Display
-%   nonzero   ：The number of non-zero elements in each component.
-%   criteria  : The difference in the training set loss function between two iterations.
-%   gradcheck ：The difference in the gradient of the training set loss function between two iterations.
+%   nonzero   ：The number of non-zero elements in each component
+%   criteria  : The difference in the training set loss function between two iterations
+%   gradcheck ：The difference in the gradient of the training set loss function between two iterations
 
 %% Parameter settings
 rng('shuffle');
