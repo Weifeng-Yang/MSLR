@@ -13,7 +13,7 @@ This code has built-in the data mentioned in paper[<sup>1</sup>](#refer-id).
 
 ## Reference
 <div id="refer-id"></div>
-[1]  W. Yang and W. Min, “Globally convergent accelerated algorithms for multilinear sparse logistic regression with ℓ0-constraints,” 2023
+[1]  Yang W, Min W. Globally Convergent Accelerated Algorithms for Multilinear Sparse Logistic Regression with ℓ0-constraints[J]. arXiv preprint arXiv:2309.09239, 2023
 
 [2] Brett W. Bader and Tamara G. Kolda. 2006. Algorithm 862: MATLAB tensor classes for fast algorithm prototyping. ACM Trans. Math. Softw. 32, 4 (December 2006), 635–653. https://doi.org/10.1145/1186785.1186794
 
