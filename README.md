@@ -13,7 +13,7 @@ For the other dataset: (1)GochiUsa-Faces[<sup>4</sup>](#refer-id), (2) Br35H :: 
 
 [Real dataset](https://1drv.ms/f/s!Aihd9wAkBe_3o3rd5GDkHHjWMuzV?e=mVUc31)
 
-If you want to run $APALM^+$ on the real data set extracted in our paper, please download the data set from the following network disk and put the data set into the folder “L0MSLR/data”. 
+If you want to run $APALM^+$ on the real data set extracted in our paper, please download the data set from the above network disk link and put the data set into the folder “L0MSLR/data”. 
 
 ## Reference
 <div id="refer-id"></div>
