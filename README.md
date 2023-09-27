@@ -9,7 +9,7 @@ This package contains code for the Multilinear Sparse Logistic Regression model 
 A toy example explains how to use the MSLR function. For "MSLR", before running the script, please first add the toolbox 'tensortoolbox'[<sup>2</sup>](#refer-id) to the running path of matlab, and then run the function 'main_Run_me'. More descriptions about these functions can be found in their annotation part.
 
 ## Data
-This code has built-in the data mentioned in paper[<sup>1</sup>](#refer-id). 
+This code has built-in the data "Concrete Crack Images" mentioned in paper[<sup>1</sup>](#refer-id). For the other dataset: (1)GochiUsa-Faces (2) Br35H :: Brain Tumor Detection, the part extracted from this paper[<sup>1</sup>](#refer-id) has been put into the following network disk address: 
 
 ## Reference
 <div id="refer-id"></div>
