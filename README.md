@@ -14,12 +14,7 @@ This code has built-in the data "Concrete Crack Images[<sup>3</sup>](#refer-id)"
 ## Reference
 <div id="refer-id"></div>
 [1]  Yang W, Min W. Globally Convergent Accelerated Algorithms for Multilinear Sparse Logistic Regression with ℓ0-constraints[J]. arXiv preprint arXiv:2309.09239, 2023
-
-
 [2] Brett W. Bader and Tamara G. Kolda. 2006. Algorithm 862: MATLAB tensor classes for fast algorithm prototyping. ACM Trans. Math. Softw. 32, 4 (December 2006), 635–653. https://doi.org/10.1145/1186785.1186794
-
 [3] L. Zhang, F. Yang, Y. D. Zhang, and Y. J. Zhu, “Road crack detection using deep convolutional neural network,” in EEE Int. Conf. Inf. Process., 2016, pp. 3708–3712
-
 [4] Rignak, “A dataset of faces from the GochiUsa anime,” Feb.2022. [Online]. Available: https://www.kaggle.com/datasets/rignak/gochiusa-faces
-
 [5] H. AHMED, “Br35h :: Brain tumor detection 2020,” oct2022. [Online]. Available: https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/code
