@@ -1,7 +1,7 @@
 
 
 ## Introduction
-In this paper,  we present a Multilinear Sparse Logistic Regression model with $\ell_0$-constraints ($\ell_0$-MLSR), which allows us to take tensor data directly as input, we propose an Accelerated Proximal Alternating Linearized Minimization with Adaptive Momentum ($APALM^+$) to solve the $\ell_0$-MLSR model.
+In this paper,  we present a Multilinear Sparse Logistic Regression model with $\ell_0$-constraints ($\ell_0$-MLSR), which allows us to take tensor data directly as input, In contrast to the $\ell_1$-norm and $\ell_2$-norm, the $\ell_0$-norm constraint is better suited for feature selection. However, due to its nonconvex and nonsmooth properties, solving it is challenging and convergence guarantees are lacking. To tackle these challanges, we propose an Accelerated Proximal Alternating Linearized Minimization with Adaptive Momentum ($APALM^+$) to solve the $\ell_0$-MLSR model.
 
 This package contains code for the Multilinear Sparse Logistic Regression model with $\ell_0$-constraints ($\ell_0$-MLSR) problem in the paper[<sup>1</sup>](#refer-id). 
 
