@@ -20,17 +20,18 @@ elseif(inci==2)
     test_tar=zeros(1,bsize);
 for j=1:bsize
     temp=log(1+exp(-(var{j}*w'+b)*y(j)));
+    tempobj=var{j}*w'+b;
     if(temp==inf)
         temp=-(var{j}*w'+b)*y(j);
         temp=temp-temp^2/2+temp^3/3;
     end
     tobj=temp;
-    if( temp>0)
+    if( tempobj>0)
         test_tar(j)=1;
         if( y(j)>0 )
         losscor=losscor+1;
         end
-    elseif( temp<=0 && y(j)<=0)
+    elseif( tempobj<=0 && y(j)<=0)
         losscor=losscor+1;
     end
     losstemp=losstemp+tobj;
