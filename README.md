@@ -9,11 +9,8 @@ This package contains code for the Multilinear Sparse Logistic Regression model 
 A toy example explains how to use the MSLR function. For "MSLR", before running the script, please first add the toolbox 'tensortoolbox'[<sup>2</sup>](#refer-id) to the running path of matlab, and then run the function 'main_Run_me'. More descriptions about these functions can be found in their annotation part.
 
 ## Data
-This code has built-in the synthesize data mentioned in paper[<sup>1</sup>](#refer-id). For the real dataset: (1) Concrete Crack Images[<sup>3</sup>](#refer-id), (2)GochiUsa-Faces[<sup>4</sup>](#refer-id), (3) Br35H :: Brain Tumor Detection[<sup>5</sup>](#refer-id), the part extracted from our paper[<sup>1</sup>](#refer-id) has been put into the following network disk address: 
+This code has built-in the synthesize data mentioned in paper[<sup>1</sup>](#refer-id). For the real dataset: (1) Concrete Crack Images[<sup>3</sup>](#refer-id) (2) Br35H :: Brain Tumor Detection[<sup>5</sup>](#refer-id), please go to the corresponding website to download.
 
-[Real dataset](https://1drv.ms/f/s!Aihd9wAkBe_3o3rd5GDkHHjWMuzV?e=mVUc31)
-
-If you want to run $APALM^+$ on the real data set extracted in our paper, please download the data set from the above network disk link and put the data set into the folder “L0MSLR/data”. 
 
 ## Reference
 <div id="refer-id"></div>
