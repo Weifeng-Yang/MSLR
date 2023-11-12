@@ -20,6 +20,4 @@ This code has built-in the synthesize data mentioned in paper[<sup>1</sup>](#ref
 
 [3] L. Zhang, F. Yang, Y. D. Zhang, and Y. J. Zhu, “Road crack detection using deep convolutional neural network,” in EEE Int. Conf. Inf. Process., 2016, pp. 3708–3712
 
-[4] Rignak, “A dataset of faces from the GochiUsa anime,” Feb.2022. [Online]. Available: https://www.kaggle.com/datasets/rignak/gochiusa-faces
-
-[5] H. AHMED, “Br35h :: Brain tumor detection 2020,” oct2022. [Online]. Available: https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/code
+[4] H. AHMED, “Br35h :: Brain tumor detection 2020,” oct2022. [Online]. Available: https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/code
