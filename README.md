@@ -4,7 +4,9 @@ Multilinear logistic regression  is a powerful tool for the analysis of multidim
 This package contains code for the Multilinear Sparse Logistic Regression model with $\ell_0$-constraints ($\ell_0$-MLSR) problem in the paper[<sup>1</sup>](#refer-id). 
 
 ## Matlab code
-A toy example explains how to use the MSLR function. For "MSLR", before running the script, please first add the toolbox 'tensortoolbox'[<sup>2</sup>](#refer-id) to the running path of matlab, and then run the function 'main_Run_me'. More descriptions about these functions can be found in their annotation part.
+A toy example explains how to use the MSLR function. 
+
+Before running this script, please first add the toolbox 'tensortoolbox'[<sup>2</sup>](#refer-id) to the running path of matlab, and then run the function 'main_Run_me'. More descriptions about these functions can be found in their annotation part.
 
 ## Data
 This code has built-in the synthesize data mentioned in paper[<sup>1</sup>](#refer-id). For the real dataset: (1) Concrete Crack Images[<sup>3</sup>](#refer-id) (2) Br35H :: Brain Tumor Detection[<sup>5</sup>](#refer-id), please go to the corresponding website to download.
