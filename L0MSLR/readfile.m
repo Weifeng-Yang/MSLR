@@ -18,7 +18,7 @@ function [ngmar,tar]=readfile(i)
     
 end
 
-function [ngmar,tar]=synthesize(N,labma,judge,nsize)
+function ngmar=synthesize(N,labma,judge,nsize)
     A=randn(20);
     A=sign(judge)*A'*A;
     B=labma*eye(20);
