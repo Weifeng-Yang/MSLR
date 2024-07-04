@@ -11,6 +11,9 @@ Before running it, first add the toolbox 'tensortoolbox'[<sup>1</sup>](#refer-id
 ## Data
 This code has built-in the synthesize data mentioned in paper[<sup>1</sup>](#refer-id). For the real dataset: (1) Concrete Crack Images[<sup>3</sup>](#refer-id) (2) Br35H :: Brain Tumor Detection[<sup>4</sup>](#refer-id), please go to the corresponding website to download.
 
+## Supplementary materials
+The 'Supplementary Materials.pdf' file gives the details of the supplementary materials mentioned in our paper.
+
 
 ## Reference
 <div id="refer-id"></div>
