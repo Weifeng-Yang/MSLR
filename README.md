@@ -20,6 +20,3 @@ The 'Supplementary Materials.pdf' file gives the details of the supplementary ma
 
 [1] Brett W. Bader and Tamara G. Kolda. 2006. Algorithm 862: MATLAB tensor classes for fast algorithm prototyping. ACM Trans. Math. Softw. 32, 4 (December 2006), 635–653. https://doi.org/10.1145/1186785.1186794
 
-[2] L. Zhang, F. Yang, Y. D. Zhang, and Y. J. Zhu, “Road crack detection using deep convolutional neural network,” in EEE Int. Conf. Inf. Process., 2016, pp. 3708–3712
-
-[3] H. AHMED, “Br35h :: Brain tumor detection 2020,” oct2022. [Online]. Available: https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection/code
